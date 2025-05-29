@@ -175,11 +175,6 @@ class _CollectionPageState extends State<Collection>
                             ),
                           ),
                         ),
-                        SizedBox(width: 20),
-                        IconButton(
-                          onPressed: () {},
-                          icon: Icon(Icons.more_horiz, color: Colors.grey[600]),
-                        ),
                       ],
                     ),
                   ),
