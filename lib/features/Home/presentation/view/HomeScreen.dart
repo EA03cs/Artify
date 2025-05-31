@@ -3,8 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ntitask/core/resources/theme_color.dart';
 import 'package:ntitask/features/Home/presentation/view/Widgets/buttonList.dart';
 import 'package:ntitask/features/Home/presentation/view/Widgets/cardItem.dart';
-import 'package:ntitask/features/Home/presentation/view/Widgets/custbottom.dart';
 import 'package:ntitask/features/Home/presentation/view/Widgets/followItem.dart';
+import 'package:ntitask/features/Home/presentation/view/Widgets/homeText.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -55,43 +55,11 @@ class HomeScreen extends StatelessWidget {
               SizedBox(height: 20.h),
               ButtonList(),
               SizedBox(height: 20.h),
-              Row(
-                children: [
-                  Text(
-                    'Top Collection 🔥',
-                    style: TextStyle(
-                      fontSize: 18.sp,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                  Spacer(),
-                  Icon(
-                    Icons.more_horiz_outlined,
-                    size: 25.sp,
-                    color: Colors.grey,
-                  ),
-                ],
-              ),
+              HomeText(title: 'Top Collection 🔥'),
               SizedBox(height: 20.h),
               CardItem(),
               SizedBox(height: 20.h),
-              Row(
-                children: [
-                  Text(
-                    'Best Artist',
-                    style: TextStyle(
-                      fontSize: 18.sp,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                  Spacer(),
-                  Icon(
-                    Icons.more_horiz_outlined,
-                    size: 25.sp,
-                    color: Colors.grey,
-                  ),
-                ],
-              ),
+              HomeText(title: 'Best Artist'),
               SizedBox(height: 20.h),
               FollowItem()
             ],
