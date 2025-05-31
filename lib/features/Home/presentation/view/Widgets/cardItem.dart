@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../core/resources/theme_color.dart';
-import '../Details.dart';
+import '../../../../details/presentation/view/Details.dart';
 import 'Image.dart';
 import 'dottedDivider.dart';
 

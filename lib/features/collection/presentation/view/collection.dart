@@ -275,22 +275,22 @@ class _CollectionPageState extends State<Collection>
   Widget buildNFTCard(int index) {
     final List<Map<String, dynamic>> nftData = [
       {
-        'price': '#0415',
+        'id': '#0415',
         'name': 'Hypebeast Apes B',
         'photo': 'assets/Image.png',
       },
       {
-        'price': '#0530',
+        'id': '#0530',
         'name': 'Hypebeast Apes D',
         'photo': 'assets/Image.png',
       },
       {
-        'price': '#0641',
+        'id': '#0641',
         'name': 'Hypebeast Apes C',
         'photo': 'assets/Image.png',
       },
       {
-        'price': '#0752',
+        'id': '#0752',
         'name': 'Hypebeast Apes A',
         'photo': 'assets/Image.png',
       },
@@ -336,7 +336,7 @@ class _CollectionPageState extends State<Collection>
             bottom: 30,
             left: 12,
             child: Text(
-              nft['price'],
+              nft['id'],
               style: TextStyle(
                 color:AppColors.primaryColor,
                 fontSize: 14,
