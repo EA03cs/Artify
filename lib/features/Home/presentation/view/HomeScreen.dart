@@ -4,7 +4,8 @@ import 'package:ntitask/core/resources/theme_color.dart';
 import 'package:ntitask/features/Home/presentation/view/Widgets/buttonList.dart';
 import 'package:ntitask/features/Home/presentation/view/Widgets/cardItem.dart';
 import 'package:ntitask/features/Home/presentation/view/Widgets/followItem.dart';
-import 'package:ntitask/features/Home/presentation/view/Widgets/homeText.dart';
+
+import 'Widgets/Textwid.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -17,9 +18,9 @@ class HomeScreen extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(20.0),
           child: Column(
+            spacing: 20.h,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(height: 20.h),
               Container(
                 width: double.infinity,
                 padding: EdgeInsets.all(16.w),
@@ -52,15 +53,10 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 20.h),
               ButtonList(),
-              SizedBox(height: 20.h),
               HomeText(title: 'Top Collection 🔥'),
-              SizedBox(height: 20.h),
               CardItem(),
-              SizedBox(height: 20.h),
               HomeText(title: 'Best Artist'),
-              SizedBox(height: 20.h),
               FollowItem()
             ],
           ),
